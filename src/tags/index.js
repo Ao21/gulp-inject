@@ -12,6 +12,7 @@ var DEFAULTS = {
     'slm': '/ {{name}}:{{ext}}',
     'haml': '-# {{name}}:{{ext}}',
     'less': '/* {{name}}:{{ext}} */'
+    'scss': '/* {{name}}:{{ext}} */'
   },
   ENDS: {
     'html': '<!-- endinject -->',
@@ -19,7 +20,8 @@ var DEFAULTS = {
     'jade': '//- endinject',
     'slm': '/ endinject',
     'haml': '-# endinject',
-    'less': '/* endinject */'
+    'less': '/* endinject */',
+    'scss': '/* endinject */'
   }
 };
 

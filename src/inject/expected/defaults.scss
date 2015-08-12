@@ -1,0 +1,7 @@
+/* inject:css */
+@import "/fixtures/lib.css";
+/* endinject */
+/* inject:scss */
+@import "/fixtures/component.scss";
+@import "/fixtures/styles.scss";
+/* endinject */
