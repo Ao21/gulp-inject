@@ -4,7 +4,7 @@ var extname = require('../extname');
 /**
  * Constants
  */
-var TARGET_TYPES = ['html', 'jade', 'slm', 'jsx', 'haml', 'less'];
+var TARGET_TYPES = ['html', 'jade', 'slm', 'jsx', 'haml', 'less','scss'];
 var IMAGES = ['jpeg', 'jpg', 'png', 'gif'];
 var DEFAULT_TARGET = TARGET_TYPES[0];
 
@@ -138,7 +138,12 @@ transform.less.less = function(filepath){
   return '@import "' + filepath +'";';
 }
 
+transform.scss.scss = function(filepath){
+  return '@import "' + filepath +'";';
+}
+
 transform.less.css = transform.less.less;
+transform.scss.css = transform.scss.scss;
 
 /**
  * Transformations for jsx is like html

@@ -77,6 +77,14 @@ describe('tags', function () {
         tags.start('less', 'UNKNOWN').should.equal('/* inject:UNKNOWN */');
       });
 
+      it('should return scss comment tag for scss files', function () {
+        tags.start('scss', 'css').should.equal('/* inject:css */');
+        tags.start('scss', 'html').should.equal('/* inject:html */');
+        tags.start('scss', 'js').should.equal('/* inject:js */');
+        tags.start('scss', 'scss').should.equal('/* inject:scss */');
+        tags.start('scss', 'UNKNOWN').should.equal('/* inject:UNKNOWN */');
+      });
+
       it('should return html comment tag for other target files', function () {
         tags.start('txt', 'css').should.equal('<!-- inject:css -->');
         tags.start('txt', 'html').should.equal('<!-- inject:html -->');
