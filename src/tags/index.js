@@ -11,7 +11,7 @@ var DEFAULTS = {
     'jade': '//- {{name}}:{{ext}}',
     'slm': '/ {{name}}:{{ext}}',
     'haml': '-# {{name}}:{{ext}}',
-    'less': '/* {{name}}:{{ext}} */'
+    'less': '/* {{name}}:{{ext}} */',
     'scss': '/* {{name}}:{{ext}} */'
   },
   ENDS: {
