@@ -1,0 +1,2 @@
+/// inject:ts
+/// endinject

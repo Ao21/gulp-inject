@@ -142,6 +142,10 @@ transform.scss.scss = function(filepath){
   return '@import "' + filepath +'";';
 }
 
+transform.ts.ts = function(filepath) {
+  return '/// <reference path="' + filepath + '" />';
+}
+
 transform.less.css = transform.less.less;
 transform.scss.css = transform.scss.scss;
 

@@ -12,7 +12,8 @@ var DEFAULTS = {
     'slm': '/ {{name}}:{{ext}}',
     'haml': '-# {{name}}:{{ext}}',
     'less': '/* {{name}}:{{ext}} */',
-    'scss': '/* {{name}}:{{ext}} */'
+    'scss': '/* {{name}}:{{ext}} */',
+    'ts': '/// inject:ts'
   },
   ENDS: {
     'html': '<!-- endinject -->',
@@ -21,7 +22,8 @@ var DEFAULTS = {
     'slm': '/ endinject',
     'haml': '-# endinject',
     'less': '/* endinject */',
-    'scss': '/* endinject */'
+    'scss': '/* endinject */',
+    'ts': '/// endinject'
   }
 };
 
